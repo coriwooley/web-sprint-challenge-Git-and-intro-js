@@ -344,7 +344,7 @@ function artistInfo(array, name){
     }
   }
 }
-console.log(artistInfo(artists, 'Frida Kahlo'))
+console.log(artistInfo(artists, "Kazimir Malevich"))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 9: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -356,8 +356,14 @@ Use artistByCountry to do the following:
 For example artistByCountry(artists, 'Spanish') will return: [ 'Salvador Dali', 'Pablo Picasso', 'Francisco Goya', 'El Greco' ]
 */
 
-function artistByCountry(/*Your Code Here*/){
-  /*Your Code Here*/
+function artistByCountry(array, nationality){
+  const artists = [];
+  for (let i = 0; i < array.length; i++){
+    if (array[i].nationality === nationality){
+      artists.push(array[i].name);
+    }
+  }
+  return artists;
 }
 
 
